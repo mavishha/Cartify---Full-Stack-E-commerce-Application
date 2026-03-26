@@ -1,0 +1,15 @@
+# Backend (Spring Boot)
+backend/target/
+backend/*.log
+
+# Frontend (Angular)
+frontend/node_modules/
+frontend/dist/
+
+# Flutter (if using Flutter instead)
+frontend/.dart_tool/
+frontend/build/
+
+# Common
+.env
+*.DS_Store

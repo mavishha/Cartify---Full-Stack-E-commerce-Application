@@ -1,0 +1,69 @@
+.title{
+font-family: cursive;
+font-size: 40px;
+}
+
+.subtitle{
+font-size: 18px;
+color: gray;
+}
+
+.card{
+border: none;
+}
+
+.card img{
+height: 250px;
+object-fit: cover;
+}
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 30px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img{
+width:50px;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:25px;
+font-weight:600;
+}
+
+.menu li{
+cursor:pointer;
+}
+
+.new{
+color:red;
+font-size:10px;
+margin-left:5px;
+}
+
+.search-box input{
+width:300px;
+padding:8px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.icons{
+display:flex;
+gap:20px;
+text-align:center;
+}
+
+.icon span{
+font-size:18px;
+}
+
+.icon p{
+font-size:12px;
+margin:0;
+}

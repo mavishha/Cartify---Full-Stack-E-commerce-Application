@@ -1,0 +1,100 @@
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 30px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img{
+width:50px;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:25px;
+font-weight:600;
+}
+
+/* .menu li{
+cursor:pointer;
+} */
+
+.new{
+color:red;
+font-size:10px;
+margin-left:5px;
+}
+
+.search-box input{
+width:300px;
+padding:8px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.icons{
+display:flex;
+gap:20px;
+text-align:center;
+}
+
+.icon span{
+font-size:18px;
+}
+
+.icon p{
+font-size:12px;
+margin:0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* --------------------- */
+
+/* .menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+} */
+
+.menu li {
+  position: relative; /* IMPORTANT */
+  cursor: pointer;
+}
+
+/* Dropdown box */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* just below CLOTHS */
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 15px;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 1000; /* ensures it's above page */
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Links */
+.dropdown-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+}
+
+.dropdown-menu a:hover {
+  color: #ff3f6c;
+}

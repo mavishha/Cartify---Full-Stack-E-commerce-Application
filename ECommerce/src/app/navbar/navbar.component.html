@@ -1,0 +1,71 @@
+<nav class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <div routerLink="/home" routerLinkActive="active">
+      <img src="assets/logo.webp" alt="logo">
+    </div>
+    
+  </div>
+
+  <!-- Menu -->
+  <ul class="menu">
+    <!-- <li><a routerLink="/login">login</a></li>
+    <li routerLink="/login">login</li> -->
+    
+    <li class="dropdown">
+      MEN
+      
+      <div class="dropdown-menu">
+        <a routerLink="/home/men/shirts">Shirts</a>
+        <a routerLink="/home/men/jeans">Jeans</a>
+        <a routerLink="/home/men/tshirts">T-Shirts</a>
+        <a routerLink="/home/men/jackets">Jackets</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      WOMEN
+        <div class="dropdown-menu">
+        <a routerLink="/home/women/shirts">Shirts</a>
+        <a routerLink="/home/women/jeans">Jeans</a>
+        <a routerLink="/home/women/tshirts">T-Shirts</a>
+        <a routerLink="/home/women/jackets">Jackets</a>
+      </div>
+    </li>
+    <li>KIDS</li>
+    <li><a routerLink="/home" class="nav-link">HOME</a></li>
+    <li>BEAUTY</li>
+    <li>GENZ</li>
+    <li>STUDIO <span class="new">NEW</span></li>
+  </ul>
+
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" placeholder="Search for products, brands and more">
+  </div>
+
+  <!-- Icons -->
+  <div class="icons">
+    <div>
+      <span><a routerLink="/home/additem" class="nav-link">+ add item</a> </span>
+    </div>
+    <div class="icon">
+      <span ><a routerLink="/login" class="nav-link">👤</a></span>
+      <!-- <p>Profile</p> -->
+       <p><a routerLink="/login" class="nav-link">login</a></p>
+      
+    </div>
+
+    <div class="icon" >
+      <span>❤</span>
+      <p>Wishlist</p>
+    </div>
+
+    <div class="icon">
+      <span><a routerLink="/cart" class="nav-link">👜</a></span>
+      <p><a routerLink="/cart" class="nav-link">Bag</a></p>
+    </div>
+    
+  </div>
+
+</nav>

@@ -1,0 +1,35 @@
+
+<h2 class="text-center">Add item </h2>
+<div class="col-md-6 offset-md-3">
+    <div class="container">
+        <form #myForm="ngForm" (ngSubmit)="Onsubmit(myForm)">
+            <div class="mb-3">
+                    <label class="form-label">Name <span *ngIf="name.invalid && name.touched" style="color:red">
+                        *
+                    </span></label>
+                    <input 
+                        type="text" 
+                        [(ngModel)]="item.name" 
+                        name="name" 
+                        required
+                        #name="ngModel"
+                        class="form-control">
+
+                    
+                
+            </div>
+            <div class="mb-3">
+                <label class="form-label">price</label>
+                <input type="number" class="form-control" name="price" [(ngModel)]="item.price" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">seller</label>
+                <input type="text" class="form-control" name="seller" [(ngModel)]="item.seller" required>
+            </div>
+            <div class="container my-3">
+                <button  class="btn btn-primary">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</div>

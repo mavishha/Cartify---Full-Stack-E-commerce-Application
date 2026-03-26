@@ -1,0 +1,24 @@
+
+<p>jeans works!</p>
+<div class="container">
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>price</th>
+                <th>seller</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of storeitems">
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.seller}}</td>
+                <td><button (click)="buyitem()">buy</button></td>
+                <td><button>add to cart</button></td>
+                <td><button>add to Wishlist</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
