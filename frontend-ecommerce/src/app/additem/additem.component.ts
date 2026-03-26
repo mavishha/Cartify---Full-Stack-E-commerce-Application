@@ -17,6 +17,7 @@ export class AdditemComponent {
   constructor(private serv:StoreService,private route:Router){}
 
   item:Store={
+    id:0,
     name:"",
     price:0,
     seller:""

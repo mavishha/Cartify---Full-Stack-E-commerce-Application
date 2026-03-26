@@ -1,5 +1,5 @@
 export interface Store {
-    id?:number,
+    id:number,//?-------------------
     name:String,
     seller:String,
     price:number
