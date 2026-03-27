@@ -5,6 +5,7 @@ import { JeansComponent } from './jeans/jeans.component';
 import { HomemainComponent } from './homemain/homemain.component';
 import { AdditemComponent } from './additem/additem.component';
 import { CartComponent } from './cart/cart.component';
+import { EditComponent } from './edit/edit.component';
 
 
 
@@ -58,6 +59,10 @@ export const routes: Routes = [
     {
         path:'cart',
         component:CartComponent
+    },
+    {
+        path:'edit',
+        component:EditComponent
     }
     
   

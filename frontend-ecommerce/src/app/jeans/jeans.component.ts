@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Store } from '../store';
-import { CommonModule, ɵnormalizeQueryParams } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { StoreService } from '../store.service';
 import { Router } from '@angular/router';
 
@@ -51,4 +51,10 @@ export class JeansComponent {
     }
     }
     
+    edititem(id:number){
+      console.log(id);
+      console.log("edit clicked");
+      this.route.navigate(["/edit"],{queryParams:{idnum:id}});
+      
+    }
 }
