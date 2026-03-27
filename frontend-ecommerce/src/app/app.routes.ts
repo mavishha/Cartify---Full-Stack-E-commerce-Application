@@ -6,6 +6,7 @@ import { HomemainComponent } from './homemain/homemain.component';
 import { AdditemComponent } from './additem/additem.component';
 import { CartComponent } from './cart/cart.component';
 import { EditComponent } from './edit/edit.component';
+import { DeleteComponent } from './delete/delete.component';
 
 
 
@@ -63,6 +64,10 @@ export const routes: Routes = [
     {
         path:'edit',
         component:EditComponent
+    },
+    {
+        path:'delete',
+        component:DeleteComponent
     }
     
   

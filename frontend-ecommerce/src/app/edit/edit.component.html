@@ -1,8 +1,8 @@
 <p>edit works!</p>
 <div>
-    name: <p>{{item.name}}</p>
-    seller: <p>{{item.seller}}</p>
-    price: <p>{{item.price}}</p>
+    name: <input type="text" [(ngModel)]="item.name">
+    seller: <input type="text" [(ngModel)]="item.seller">
+    price: <input type="text" [(ngModel)]="item.price">
     <button (click)="edit()">edit</button>
     <p *ngIf="text">edited</p>
 </div>

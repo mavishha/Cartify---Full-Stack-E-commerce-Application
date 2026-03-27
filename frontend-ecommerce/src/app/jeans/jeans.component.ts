@@ -57,4 +57,12 @@ export class JeansComponent {
       this.route.navigate(["/edit"],{queryParams:{idnum:id}});
       
     }
+
+    deleteitem(id:number){
+        console.log("delte clicked");
+        this.service.delete(id).subscribe(par=>{
+          console.log("deleted");
+          this.getitems();
+        })
+    }
 }
