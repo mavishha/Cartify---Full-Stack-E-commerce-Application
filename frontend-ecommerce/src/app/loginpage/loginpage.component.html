@@ -2,11 +2,14 @@
     <div>
         <h1>Login</h1>
         <div>
-            username: <input type="text" [(ngModel)]="name">
+            username: <input type="text" [(ngModel)]="userdet.username">
          
         </div>
          <div>
-            password: <input type="password" [(ngModel)]="password">
+            password: <input type="password" [(ngModel)]="userdet.password">
             </div>  
+    </div>
+    <div>
+        <button (click)="login()">submit</button>
     </div>
 </div>
