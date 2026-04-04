@@ -13,7 +13,8 @@ export class StoreService {
   private editurl="http://localhost:8082/store/edit/{id}"
   private deleteurl="http://localhost:8082/store/delete/"
 
-  private loginurl="http://localhost:8082/loginuser"
+  private loginurl="http://localhost:8082/login"
+  private registerurl="http://localhost:8082/registeruser"
 
   constructor(private http:HttpClient) { }
   fetchitems(){
@@ -36,5 +37,8 @@ export class StoreService {
 
   userdetailsAuth(userdata:User){
     return this.http.post(this.loginurl,userdata);
+  }
+  registeruser(userdata:User){
+    return this.http.post(this.registerurl,userdata);
   }
 }
